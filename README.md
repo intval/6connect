@@ -56,8 +56,10 @@ is impossible without usage of a proxy
 
 
 4. Using invalid type is request results in an incomplete error message:
-actual: "Invalid type: "
-while nothing follows the semicolon
-expected: "Invalid type: IPv40"
-note the incorrect type in the url
-https://cloud.6connect.com/6c_2550/api/v1/api.php?target=ipam&action=smartAssign&mask=32&type=IPv40&resourceId=163&rir=RIPE
+actual: "Invalid type: "  
+while nothing follows the semicolon  
+expected: "Invalid type: IPv40"  
+note the incorrect type in the url  
+https://cloud.6connect.com/6c_2550/api/v1/api.php?target=ipam&action=smartAssign&mask=32&type=IPv40&resourceId=163&rir=RIPE  
+But be ware of just echoing the input as is. Could break the JSON or even cause XSS in some browsers  
+img: http://prntscr.com/az73hi  (the text says: best APIs also tend to document themselves on the go)  
